@@ -1,0 +1,15 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "license": "MIT",
+  "packageManager": "pnpm@11.5.3",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @workspace/api-server --filter @workspace/classroom-tracker dev",
+    "build": "pnpm -r --if-present run build"
+  },
+  "private": true,
+  "devDependencies": {
+    "prettier": "^3.8.3",
+    "typescript": "~5.9.3"
+  }
+}
