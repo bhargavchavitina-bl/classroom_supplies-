@@ -1,15 +1,11 @@
 {
-  "name": "workspace",
+  "name": "@workspace/api-spec",
   "version": "0.0.0",
-  "license": "MIT",
-  "packageManager": "pnpm@11.5.3",
-  "scripts": {
-    "dev": "pnpm --parallel --filter @workspace/api-server --filter @workspace/classroom-tracker dev",
-    "build": "pnpm -r --if-present run build"
-  },
   "private": true,
+  "scripts": {
+    "codegen": "orval --config ./orval.config.js"
+  },
   "devDependencies": {
-    "prettier": "^3.8.3",
-    "typescript": "~5.9.3"
+    "orval": "^8.9.1"
   }
 }
